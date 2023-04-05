@@ -3,7 +3,7 @@
     $servidor = "localhost";
     $usuario = "root";
     $senha = "";
-    $banco = ""; // nome do banco de  dados
+    $banco = "db_contato"; // nome do banco de  dados
 
     // cria a conexão com o banco de dados
     $conexao = new mysqli($servidor, $usuario, $senha, $banco);
@@ -25,7 +25,7 @@
             $senha = $_POST['password'];
 
             
-            $sql = "INSERT INTO nome_da_tabela (nome, telefone, data, email, senha) 
+            $sql = "INSERT INTO usuarios (nome, telefone, data, email, senha) 
             VALUES ('$nome', '$telefone', '$data', '$email', '$senha')";
 
             if($conexao->query($sql))

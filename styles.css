@@ -19,7 +19,7 @@ h1{
 }
 
 form{
-    width: 500px;
+    width: 300px;
     background-color: darkslategray;
     border-radius: 5px;
     text-align: center;
@@ -30,13 +30,33 @@ input{
     width: 280px;
     height: 40px;
     padding: 0 10px;
+    background-color: darkslategray;
+    color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+}
+input:hover{
+    border-bottom: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+}
+::placeholder{
+    color: white;
 }
 .botao{
-    background-color: darkgrey;
-    border: 0;
+    width: 280px;
+    height: 40px;
+    background-color: lightgrey;
+    color: black;
+    font-size: 15px;
+    border: 0 !important;
     margin-bottom: 15px;
 }
 
 .botao:hover{
-    background-color: lightgrey;
+    background-color: darkgrey;
 }
